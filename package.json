@@ -1,0 +1,30 @@
+{
+  "name": "mernGraphql",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "server": "nodemon src/server.js",
+    "admin": "npm start --prefix admin-app",
+    "dev": "concurrently \" npm run server \" \" npm run admin \""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-core": "^3.7.0",
+    "apollo-server-express": "^3.7.0",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "concurrently": "^7.1.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1",
+    "graphql": "^16.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
